@@ -56,6 +56,7 @@ public class MainActivity extends AppCompatActivity {
         final ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,
                 mArrayListUser);
         mListView.setAdapter(arrayAdapter);
+        arrayAdapter.notifyDataSetChanged();
 
         mAdd = (Button)findViewById(R.id.buttonAdd);
         mValue = (EditText)findViewById(R.id.etValue);
